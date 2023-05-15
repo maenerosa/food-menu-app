@@ -1,4 +1,4 @@
-@import url(‘https://fonts.googleapis.com/css?family=Montserrat&display=swap’);
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 * {
   padding: 0;
@@ -7,44 +7,51 @@
 }
 
 body {
-  font-weight: 300;
-  font-size: 1.05rem;
-  line-height: 1.6;
   background: #dde1e7;
   font-family: ‘Montserrat’, sans-serif;
 }
 
-/*  */
-.btn {
-  font-family: inherit;
+.logo {
+  display: fixed;
+  text-align: center;
+}
+.logo blockquote {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
   cursor: pointer;
-  outline: 0;
-  font-size: 1.05rem;
-}
-.text {
-  opacity: 0.8;
-}
-.title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #000000;
 }
 
+.logo img {
+  width: 250px;
+  cursor: pointer;
+}
 /*  */
+.btn {
+  cursor: pointer;
+  font-size: 1.05rem;
+}
 .container {
   min-height: 100vh;
 }
 .meal-wrapper {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
-  background: #fff;
+  background: #dde1e7;
   text-align: center;
 }
 .meal-search {
   margin: 2rem 0;
 }
-.meal-search cite {
-  font-size: 1rem;
+.meal-search span {
+  color: #ed11d7;
+}
+
+.meal-search h1 {
+  margin-bottom: 0.5rem;
+  font-size: 30px;
 }
 .meal-search-box {
   margin: 1.2rem 0;
@@ -57,52 +64,41 @@ body {
 }
 .search-control {
   padding: 0 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: inherit;
   outline: 0;
-  border: 1px solid #ed11d7;
-  color: #ed11d7;
-  border-top-left-radius: 2rem;
+  border: 1px solid #ffffff;
+  color: #010101;
   border-bottom-left-radius: 2rem;
 }
 .search-control::placeholder {
-  color: #ed11d7;
+  color: #000000;
 }
 .search-btn {
   width: 55px;
   height: 55px;
   font-size: 1.8rem;
-  background: #ed11d7;
+  background: #000000;
   color: #fff;
   border: none;
   border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
   transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
 }
 .search-btn:hover {
   background: #ed11d7;
 }
-.meal-result {
-  margin-top: 4rem;
-}
 #meal {
-  margin: 2.4rem 0;
+  margin: 2rem 0;
 }
 .meal-item {
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(94, 104, 121, 0.993);
   margin: 2rem 0;
 }
 .meal-img img {
+  margin: 1rem 0;
+  padding: 0 1rem;
   width: 100%;
   display: block;
 }
@@ -110,28 +106,20 @@ body {
   padding: 1.5rem 0.5rem;
 }
 .meal-name h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .recipe-btn {
   text-decoration: none;
-  color: #fff;
-  background: #ed11d7;
-  font-weight: 500;
-  font-size: 1.1rem;
-  padding: 0.75rem 0;
   display: block;
-  width: 175px;
+  color: #fff;
+  background: #050505;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  width: 165px;
   margin: 1rem auto;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  border-radius: 1rem;
   transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
 }
 .recipe-btn:hover {
   background: #ed11d7;
@@ -143,22 +131,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  color: #fff;
-  background: #ed11d7;
+  color: #000000;
+  background: #dde1e7;
   border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
   width: 90%;
   height: 90%;
   overflow-y: scroll;
   display: none;
   padding: 2rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.484);
 }
 .meal-details::-webkit-scrollbar {
   width: 10px;
@@ -166,10 +147,6 @@ body {
 .meal-details::-webkit-scrollbar-thumb {
   background: #f0f0f0;
   border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
 }
 
 /* js related */
@@ -188,19 +165,13 @@ body {
   right: 2rem;
   top: 2rem;
   font-size: 1.8rem;
-  background: #fff;
   border: none;
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
 }
 .recipe-title {
   letter-spacing: 1px;
@@ -208,27 +179,12 @@ body {
 }
 .recipe-category {
   background: #fff;
+  font-size: 20px;
   font-weight: 600;
   color: #ed11d7;
   display: inline-block;
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-}
-.recipe-category {
-  background: #fff;
-  font-weight: 600;
-  color: #ed11d7;
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
 }
 .recipe-instruct {
   padding: 1rem 0;
@@ -237,10 +193,6 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   margin: 0 auto;
   display: block;
 }
@@ -248,17 +200,14 @@ body {
   margin: 1.4rem 0;
 }
 .recipe-link a {
-  color: #fff;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
 }
 .recipe-link a:hover {
   opacity: 0.8;
+  color: #ed11d7;
 }
 
 /*  */
@@ -267,7 +216,6 @@ body {
   color: #ed11d7;
   font-size: 1.8rem;
   font-weight: 600;
-  width: 100%;
 }
 
 /* Media Queries */
