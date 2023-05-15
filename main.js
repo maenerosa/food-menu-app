@@ -54,6 +54,21 @@ function mealRecipeCard(meal) {
   let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">Category: ${meal.strCategory}</p>
+        <div class = "recipe-ingredients">
+            <h3>Ingredients:</h3>
+            <ul>
+            <li>${meal.strIngredient1}</li>
+            <li>${meal.strIngredient2}</li>
+            <li>${meal.strIngredient3}</li>
+            <li>${meal.strIngredient4}</li>
+            <li>${meal.strIngredient5}</li>
+            <li>${meal.strIngredient6}</li>
+            <li>${meal.strIngredient7}</li>
+            <li>${meal.strIngredient8}</li>
+            <li>${meal.strIngredient9}</li>
+
+            </ul> 
+        </div>
         <div class = "recipe-instruct">
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
